@@ -1,0 +1,10 @@
+#bu kodları açıların esas ölçüsünü bulabilmek için yazdım
+
+x=int(input("Esas ölçüsünü almak istediğiniz sayıyı giriniz:"))
+if 0<x<=360:
+    print("Esas ölçü değeriniz:", x ,"derece")
+elif x<0:
+    print("esas ölçü değeriniz:", 360-(-x%360), "derecedir.")
+else:
+    x=x%360                                    #360’ın modunu aldık.
+    print("Değeriniz:", x ,"derece")
